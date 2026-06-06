@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Big Bang</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <video class="fondo" autoplay muted loop playsinline>
+    <source src="videos/2.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+
+  <div class="contenido">
+
+    <h1>💥 El Big Bang</h1>
+    <br>
+    <h2 class="subtitulo">Expansión, tiempo profundo, universo en crecimiento</h2>
+
+    <p class="texto-intro">
+      El Big Bang no fue una explosión en un lugar.
+      Fue algo más extraño: <strong>el nacimiento del espacio mismo</strong>.
+    </p>
+    <p class="texto-intro" style="margin-top:12px;">
+      Al principio, todo estaba increíblemente concentrado.
+      No había estrellas ni átomos, solo energía y calor extremo.
+      El universo era pequeño, denso y muy joven.
+    </p>
+
+    <div class="texto-mas">
+      <p>Con el tiempo, el espacio empezó a expandirse.
+      No es que las cosas se muevan dentro del espacio:
+      es el espacio el que se estira y las separa.</p>
+
+      <p style="margin-top:12px;">Eso sigue pasando hoy. El universo todavía crece.</p>
+
+      <p style="margin-top:12px;">Para entenderlo, tenemos que pensar en <strong>tiempo profundo</strong>:
+      no años, ni siglos, sino miles de millones de años.
+      Tiempos tan largos que nuestra imaginación apenas los roza.</p>
+
+      <p style="margin-top:12px;">Las primeras estrellas nacieron mucho después del Big Bang.
+      Y dentro de ellas se fabricaron los elementos que hoy forman planetas… y personas.</p>
+
+      <p style="margin-top:12px;">El universo no apareció completo.
+      Se fue haciendo, lentamente.
+      Y todavía no terminó.</p>
+    </div>
+    <button class="btn-leer-mas" onclick="toggleLeerMas(this)">▼ Leer más...</button>
+
+    <!-- VIDEO O IMAGEN -->
+<div class="media-embed">
+  <iframe
+    src="https://www.youtube.com/embed/dO4j6yEXQmg"
+    loading="lazy"
+    allowfullscreen>
+  </iframe>
+</div>
+    loading="lazy"
+    allowfullscreen>
+  </iframe>
+</div>
+    <div class="botones-nav">
+      <button class="btn btn-cyan" onclick="location.href='que_habia_antes.html'">
+        🌀 ¿Qué había antes?
+      </button>
+      <button class="btn btn-verde" onclick="location.href='materia_energia_luz.html'">
+        ⚡ ¿De qué está hecho el universo?
+      </button>
+      <button class="btn btn-amarillo" onclick="location.href='la_materia.html'">
+        🔬 ¿Qué es la materia?
+      </button>
+    </div>
+
+    <div class="botones-extra">
+      <button class="btn btn-ia" onclick="consultarIA()">
+        💬 Consultar con IA
+      </button>
+      <button class="btn btn-volver" onclick="history.back()">
+        ← Volver
+      </button>
+    </div>
+
+  </div>
+  <script src="ia.js"></script>
+</body>
+</html>

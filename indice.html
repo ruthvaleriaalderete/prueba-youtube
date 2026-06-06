@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Índice — Ciencias para Compartir</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .indice-wrap {
+      max-width: 780px;
+      width: 100%;
+      margin: 0 auto;
+      padding-bottom: 60px;
+    }
+
+    .indice-titulo {
+      font-family: 'Fredoka One', cursive;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--amarillo);
+      text-shadow: 0 0 30px rgba(255,215,0,0.4);
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .indice-sub {
+      text-align: center;
+      color: rgba(240,244,255,0.6);
+      font-size: 1rem;
+      margin-bottom: 36px;
+    }
+
+    .bloque {
+      margin-bottom: 28px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1.5px solid rgba(255,255,255,0.1);
+    }
+
+    .bloque-header {
+      padding: 14px 20px;
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.15rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .bloque-links {
+      display: flex;
+      flex-direction: column;
+      background: rgba(0,0,0,0.25);
+    }
+
+    .link-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 20px;
+      text-decoration: none;
+      color: rgba(240,244,255,0.88);
+      font-size: 1rem;
+      font-weight: 600;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      transition: background 0.2s, padding-left 0.2s;
+    }
+
+    .link-item:hover {
+      background: rgba(255,255,255,0.08);
+      padding-left: 28px;
+      color: #fff;
+    }
+
+    .link-item .emoji {
+      font-size: 1.2rem;
+      width: 28px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .link-item .tag {
+      margin-left: auto;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      flex-shrink: 0;
+    }
+
+    .btn-inicio {
+      display: block;
+      margin: 36px auto 0;
+      width: fit-content;
+    }
+
+    /* colores por tema */
+    .t1 { background: linear-gradient(135deg, #FF6B2B55, #FF6B2B22); border-bottom: 2px solid #FF6B2B44; }
+    .t2 { background: linear-gradient(135deg, #00D4FF44, #00D4FF11); border-bottom: 2px solid #00D4FF33; }
+    .t3 { background: linear-gradient(135deg, #FFD70044, #FFD70011); border-bottom: 2px solid #FFD70033; }
+    .t4 { background: linear-gradient(135deg, #A855F744, #A855F711); border-bottom: 2px solid #A855F733; }
+    .t5 { background: linear-gradient(135deg, #22C55E44, #22C55E11); border-bottom: 2px solid #22C55E33; }
+    .t6 { background: linear-gradient(135deg, #FF4ECD44, #FF4ECD11); border-bottom: 2px solid #FF4ECD33; }
+    .t7 { background: linear-gradient(135deg, #38BDF844, #38BDF811); border-bottom: 2px solid #38BDF833; }
+    .t8 { background: linear-gradient(135deg, #F9731644, #F9731611); border-bottom: 2px solid #F9731633; }
+  </style>
+</head>
+<body>
+  <video class="fondo" autoplay muted loop playsinline>
+    <source src="videos/intro.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+
+  <div class="contenido" style="justify-content:flex-start; padding-top:50px;">
+    <div class="indice-wrap">
+
+      <h1 class="indice-titulo">🗺️ Todos los temas</h1>
+      <p class="indice-sub">Tocá cualquier tema para ir directo a él</p>
+
+      <!-- TEMA 1 -->
+      <div class="bloque">
+        <div class="bloque-header t1">🌌 Tema 1 — El origen del universo</div>
+        <div class="bloque-links">
+          <a class="link-item" href="tema1.html">
+            <span class="emoji">🌌</span> ¿De dónde salió todo lo que existe?
+            <span class="tag">inicio</span>
+          </a>
+          <a class="link-item" href="bigbang.html">
+            <span class="emoji">💥</span> El Big Bang — ¿Hubo una explosión?
+          </a>
+          <a class="link-item" href="que_habia_antes.html">
+            <span class="emoji">🌀</span> ¿Qué había antes del Big Bang?
+          </a>
+        </div>
+      </div>
+
+      <!-- TEMA 2 -->
+      <div class="bloque">
+        <div class="bloque-header t2">⚡ Tema 2 — Materia, energía y luz</div>
+        <div class="bloque-links">
+          <a class="link-item" href="materia_energia_luz.html">
+            <span class="emoji">⚡</span> ¿De qué está hecho el universo?
+            <span class="tag">inicio</span>
+          </a>
+          <a class="link-item" href="la_materia.html">
+            <span class="emoji">🔬</span> La materia
+          </a>
+          <a class="link-item" href="la_energia.html">
+            <span class="emoji">🌟</span> La energía
+          </a>
+          <a class="link-item" href="la_luz.html">
+            <span class="emoji">💡</span> La luz
+          </a>
+          <a class="link-item" href="tabla_periodica.html">
+            <span class="emoji">🧪</span> La tabla periódica
+          </a>
+        </div>
+      </div>
+
+      <!-- TEMA 3 -->
+      <div class="bloque">
+        <div class="bloque-header t3">⭐ Tema 3 — Las estrellas</div>
+        <div class="bloque-links">
+          <a class="link-item" href="como_se_enciende_una_estrella.html">
+            <span class="emoji">🔥</span> ¿Cómo se enciende una estrella?
+            <span class="tag">inicio</span>
+          </a>
+          <a class="link-item" href="vida_de_una_estrella.html">
+            <span class="emoji">⭐</span> Vida de una estrella
+          </a>
+          <a class="link-item" href="muerte_estelar.html">
+            <span class="emoji">💀</span> Muerte estelar
+          </a>
+          <a class="link-item" href="la_gravedad.html">
+            <span class="emoji">🌍</span> ¿Qué es la gravedad?
+          </a>
+        </div>
+      </div>
+
+      <!-- TEMA 4 -->
+      <div class="bloque">
+        <div class="bloque-header t4">🌀 Tema 4 — Galaxias</div>
+        <div class="bloque-links">
+          <a class="link-item" href="galaxias.html">
+            <span class="emoji">🌀</span> ¿Cómo se organiza el universo?
+            <span class="tag">inicio</span>
+          </a>
+          <a class="link-item" href="tipos_de_galaxias.html">
+            <span class="emoji">🔭</span> Tipos de galaxias
+          </a>
+          <a class="link-item" href="nuestra_galaxia.html">
+            <span class="emoji">🌌</span> Nuestra galaxia — La Vía Láctea
+          </a>
+          <a class="link-item" href="la_masa.html">
+            <span class="emoji">⚖️</span> ¿Qué es la masa?
+          </a>
+          <a class="link-item" href="la_fisica.html">
+            <span class="emoji">🔬</span> ¿Qué es la física?
+          </a>
+        </div>
+      </div>
+
+      <!-- TEMA 5 -->
+      <div class="bloque">
+        <div class="bloque-header t5">🪐 Tema 5 — Mundos y sistemas</div>
+        <div class="bloque-links">
+          <a class="link-item" href="como_nacen_los_mundos.html">
+            <span class="emoji">🪐</span> ¿Cómo nacen los mundos?
+            <span class="tag">inicio</span>
+          </a>
+          <a class="link-item" href="nuestro_sistema_solar.html">
+            <span class="emoji">☀️</span> Nuestro sistema solar
+          </a>
+          <a class="link-item" href="otros_sistemas.html">
+            <span class="emoji">🌍</span> Otros sistemas — Exoplanetas
+          </a>
+          <a class="link-item" href="un_poco_de_quimica.html">
+            <span class="emoji">🧪</span> Un poco de química
+          </a>
+          <a class="link-item" href="que_mantiene_todo_unido.html">
+            <span class="emoji">🔗</span> ¿Qué mantiene todo unido?
+          </a>
+        </div>
+      </div>
+
+      <!-- TEMA 6 -->
+      <div class="bloque">
+        <div class="bloque-header t6">🧲 Tema 6 — Las fuerzas</div>
+        <div class="bloque-links">
+          <a class="link-item" href="que_mantiene_todo_unido.html">
+            <span class="emoji">🔗</span> ¿Qué mantiene todo unido?
+            <span class="tag">inicio</span>
+          </a>
+          <a class="link-item" href="la_gravedad.html">
+            <span class="emoji">🌍</span> La gravedad
+          </a>
+          <a class="link-item" href="la_masa.html">
+            <span class="emoji">⚖️</span> La masa
+          </a>
+          <a class="link-item" href="otras_fuerzas.html">
+            <span class="emoji">🧲</span> Otras fuerzas
+          </a>
+        </div>
+      </div>
+
+      <!-- TEMA 7 -->
+      <div class="bloque">
+        <div class="bloque-header t7">🔭 Tema 7 — El cielo</div>
+        <div class="bloque-links">
+          <a class="link-item" href="el_cielo.html">
+            <span class="emoji">🔭</span> El cielo visto desde la Tierra
+            <span class="tag">inicio</span>
+          </a>
+          <a class="link-item" href="movimiento_aparente.html">
+            <span class="emoji">🌅</span> Movimiento aparente
+          </a>
+          <a class="link-item" href="fenomenos.html">
+            <span class="emoji">🌠</span> Fenómenos — eclipses, auroras, meteoros
+          </a>
+        </div>
+      </div>
+
+      <!-- TEMA 8 -->
+      <div class="bloque">
+        <div class="bloque-header t8">✨ Tema 8 — El universo y nosotros</div>
+        <div class="bloque-links">
+          <a class="link-item" href="el_universo_y_nosotros.html">
+            <span class="emoji">🌍</span> El universo y nosotros
+            <span class="tag">inicio</span>
+          </a>
+          <a class="link-item" href="polvo_de_estrellas.html">
+            <span class="emoji">✨</span> Polvo de estrellas
+          </a>
+          <a class="link-item" href="pensar_el_universo.html">
+            <span class="emoji">💭</span> Pensar el universo
+          </a>
+        </div>
+      </div>
+
+      <!-- BOTÓN VOLVER -->
+      <button class="btn btn-amarillo btn-inicio" onclick="location.href='index.html'">
+        🚀 Volver al inicio
+      </button>
+
+    </div>
+  </div>
+
+  <script src="ia.js"></script>
+</body>
+</html>

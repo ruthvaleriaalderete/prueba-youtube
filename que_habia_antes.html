@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Qué había antes?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <video class="fondo" autoplay muted loop playsinline>
+    <source src="videos/1.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+
+  <div class="contenido">
+
+    <h1>🌀 ¿Qué había antes del Big Bang?</h1>
+    <h2 class="subtitulo">Lo que creemos, lo que no sabemos, el valor del misterio</h2>
+
+    <p class="texto-intro">
+      Cuando alguien pregunta qué había antes del Big Bang,
+      la ciencia no se apura a responder. Y eso es importante.
+    </p>
+    <p class="texto-intro" style="margin-top:12px;">
+      Algunas teorías dicen que pudo haber otros universos,
+      o ciclos de expansión y contracción,
+      o algo que todavía no entendemos.
+    </p>
+
+    <div class="texto-mas">
+      <p>Y también está esta posibilidad honesta:
+      tal vez la pregunta "antes" no tenga sentido,
+      porque el tiempo mismo empezó ahí.</p>
+
+      <p style="margin-top:12px;">La ciencia avanza hasta donde puede observar, medir y pensar con cuidado.
+      Cuando no alcanza, no inventa certezas. Reconoce el misterio.</p>
+
+      <p style="margin-top:12px;">Eso no es debilidad. Es respeto por la realidad.</p>
+
+      <p style="margin-top:12px;">Aceptar que no sabemos todo es lo que mantiene viva la curiosidad.
+      Si el universo fuera completamente entendido, ya no habría preguntas.
+      Y sin preguntas, no habría ciencia.</p>
+
+      <p style="margin-top:12px;">El misterio no es un vacío.
+      Es una invitación.</p>
+    </div>
+    <button class="btn-leer-mas" onclick="toggleLeerMas(this)">▼ Leer más...</button>
+
+    <!-- VIDEO O IMAGEN -->
+    <div class="media-embed">
+    
+      
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/3lylY4U-meU?si=tS6sL8TuV5ytyBpw"  allowfullscreen></iframe>
+      
+        <img src="media/imagenes/nombre.jpg" alt="descripción">
+    
+      
+    </div>
+
+    <div class="botones-nav">
+      <button class="btn btn-naranja" onclick="location.href='bigbang.html'">
+        💥 ¿Hubo una explosión?
+      </button>
+      <button class="btn btn-amarillo" onclick="location.href='la_materia.html'">
+        🔬 ¿Qué es la materia?
+      </button>
+      <button class="btn btn-verde" onclick="location.href='materia_energia_luz.html'">
+        ⚡ ¿De qué está hecho el universo?
+      </button>
+      <button class="btn btn-rosa" onclick="location.href='la_energia.html'">
+        🌟 ¿Qué es la energía?
+      </button>
+    </div>
+
+    <div class="botones-extra">
+      <button class="btn btn-ia" onclick="consultarIA()">
+        💬 Consultar con IA
+      </button>
+      <button class="btn btn-volver" onclick="history.back()">
+        ← Volver
+      </button>
+    </div>
+
+  </div>
+  <script src="ia.js"></script>
+</body>
+</html>
